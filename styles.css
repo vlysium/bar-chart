@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: row-reverse;
   gap: 1px;
-  height: 128px;
+  height: 196px;
   width: 840px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -20,4 +20,30 @@
   list-style: none;
   width: 20px;
   margin-top: auto;
+  animation: scroll 1s linear;
+}
+
+.bar:first-child {
+  animation: grow 1s linear;
+  transform-origin: bottom;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-21px);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0) translateX(0px);
+  }
+
+  100% {
+    transform: scaleY(100%) translateX(-21px);
+  }
 }

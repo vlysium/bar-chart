@@ -33,7 +33,7 @@ function updateQueue() {
 function displayQueue() {
   barChart.textContent = "";
   queue.forEach((bar) => {
-    barChart.innerHTML += `<li class="bar" style="height: ${bar * 4}px; background-color: hsl(${
+    barChart.innerHTML += `<li class="bar" style="height: ${bar * 6 + 4}px; background-color: hsl(${
       128 - bar * 4
     }, 100%, 50%)"></li>`;
   });
