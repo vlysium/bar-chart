@@ -5,3 +5,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#bar-chart {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1px;
+  height: 128px;
+  width: 840px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.bar {
+  list-style: none;
+  width: 20px;
+  margin-top: auto;
+}
