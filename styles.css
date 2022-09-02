@@ -6,14 +6,28 @@
   box-sizing: border-box;
 }
 
+#interface {
+  padding: 16px;
+  background-color: antiquewhite;
+}
+
 #bar-chart {
   display: flex;
   flex-direction: row-reverse;
   gap: 1px;
-  height: 196px;
+  height: 240px;
   width: 840px;
   margin: 0 auto;
   overflow-x: hidden;
+  background-color: white;
+  position: relative;
+}
+
+#bar-chart::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .bar {
@@ -43,7 +57,11 @@
     transform: scaleY(0) translateX(0px);
   }
 
+  33% {
+    transform: scaleY(100%) translateX(-7px);
+  }
+
   100% {
-    transform: scaleY(100%) translateX(-21px);
+    transform: translateX(-21px);
   }
 }
