@@ -8,7 +8,8 @@
 
 #interface {
   padding: 16px;
-  background-color: antiquewhite;
+  background-color: #0c0a0a;
+  min-height: 100vh;
 }
 
 #bar-chart {
@@ -19,7 +20,7 @@
   width: 840px;
   margin: 0 auto;
   overflow-x: hidden;
-  background-color: white;
+  background-color: #1b1b1b;
   position: relative;
 }
 
@@ -35,6 +36,17 @@
   width: 20px;
   margin-top: auto;
   animation: scroll 1s linear;
+  position: relative;
+}
+
+#bar-chart:hover .bar::after {
+  content: attr(data-hover);
+  font-family: monospace;
+  position: absolute;
+  text-align: center;
+  top: -18px;
+  width: 100%;
+  color: inherit;
 }
 
 .bar:first-child {
