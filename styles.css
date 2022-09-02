@@ -35,7 +35,7 @@
   list-style: none;
   width: 20px;
   margin-top: auto;
-  animation: scroll 1s linear both;
+  animation: scroll 1s linear forwards;
   position: relative;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .bar:first-child {
-  animation: grow 1s linear both;
+  animation: grow 1s linear forwards;
   transform-origin: bottom;
 }
 
