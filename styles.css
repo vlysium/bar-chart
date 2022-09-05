@@ -24,13 +24,6 @@
   position: relative;
 }
 
-#bar-chart::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 .bar {
   list-style: none;
   width: 20px;
@@ -39,7 +32,7 @@
   position: relative;
 }
 
-#bar-chart:hover .bar::after {
+.bar:hover::after {
   content: attr(data-hover);
   font-family: monospace;
   position: absolute;
